@@ -75,8 +75,10 @@ BLUE = (0, 114, 255)
 
 player_left = Player('images\ping_rocket1.png', win_w*0.07, (win_h-220)/2, 50, 220, 7, 7)
 player_right = Player('images\ping_rocket2.png', win_w*0.9, (win_h-220)/2, 50, 220, 7, 7)
+ball = Player('images\\ball2.png', (win_w-50)/2, (win_h-50)/2, 50, 50, 7, 7)
 all_sprite.add(player_left)
 all_sprite.add(player_right)
+all_sprite.add(ball)
 
 def set_text(text, x, y, color=(255,255,200)):
     mw.blit(
